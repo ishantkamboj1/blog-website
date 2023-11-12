@@ -1,0 +1,20 @@
+<%- include("./partials/blogheader.ejs") %>
+
+<main class="blog-post">
+    <article>
+        <header id="header2">
+            <h1 class="post-title"><%= title %></h1>
+            <div class="post-meta">
+                <span class="author">By <%= author %></span>
+                <span class="date">Published on <%= date %></span>
+            </div>
+        </header>
+        <section class="post-content">
+            <p><%= content %></p>
+        </section>
+    </article>
+    <a href="/" class="back-btn">Back to Home</a>
+</main>
+
+
+    <%- include("./partials/blogfooter.ejs") %>

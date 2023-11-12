@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogify Homepage</title>
+    <link rel="stylesheet" href="/styles/create.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BLOGIFY</div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Createpost">Create Post</a></li>
+                <li><a href="/health">Health</a></li>
+                <li><a href="/tech">Tech</a></li>
+                <li><a href="/travel">Travel</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-post">
+        <article>
+            <form action="/update/<%= blog.id %>" method="post">
+                <header id="header2">
+                    <h1 class="post-title">
+                        <input type="text" name="title" placeholder="Enter Title" value="<%= blog.title %>" required>
+                    </h1>
+                    <div class="post-meta">
+                        <span class="author">
+                            <input type="text" name="author" placeholder="Author Name" value="<%= blog.author %>" required>
+                        </span>
+                        <span class="date">
+                            <input type="date" name="date" value="<%= blog.date %>" required>
+                        </span>
+                    </div>
+                </header>
+                <section class="post-content">
+                    <textarea name="content" placeholder="Enter Blog Content" rows="10" required><%= blog.content %></textarea>
+                </section>
+                <div class="form-footer">
+                    <button type="submit">Update</button>
+                </div>
+            </form>
+            <a href="/" class="back-btn">Back to Home</a>
+        </article>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/js/script.js" charset="utf-8"></script>
+    
+    </body>
+    </html>    

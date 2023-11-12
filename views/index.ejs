@@ -1,0 +1,86 @@
+<%- include("./partials/header.ejs") %>
+
+        <div class="posts-grid content">
+
+            <% blogs.forEach(blog => { %>
+                <div class="post-card">
+                    <h2 class="post-title"><%= blog.title %></h2>
+                    <p class="post-excerpt"><%= blog.content.substring(0, 100) %>...</p>
+                    <a href="/blogs/<%= blog.id %>" class="read-more-btn">Read More</a>
+                </div>
+            <% }) %>
+            
+            <div id="b1" class="post-card">
+                <h2 class="post-title">The Transformative Impact of VR on Our World</h2>
+                <p class="post-excerpt">In my role as a virtual reality specialist, I can't help but marvel at how this groundbreaking technology has evolved from the realm of science fiction into a transfor...</p>
+                <button class="read-more-btn" data-blog-id="blog1">Read More</button>
+            </div>
+           
+            <div id="b2" class="post-card">
+                <h2 class="post-title">Conquering the Fear of Success</h2>
+                <p class="post-excerpt">Fear of success is a common phenomenon that affects many individuals, and can often prevent them from achievin...</p>
+                <button class="read-more-btn" data-blog-id="blog2">Read More</button>
+            </div>
+
+            <div id="b3" class="post-card">
+                <h2 class="post-title">Prioritizing Employee Well-Being: The Significance of Mental Health Days</h2>
+                <p class="post-excerpt">In today's relentless and high-pressure work landscape, the inclusion of mental health days is pivotal for safeguarding the well-being of em...</p>
+                <button class="read-more-btn" data-blog-id="blog3">Read More</button>
+            </div>
+
+            <div id="b4" class="post-card">
+                <h2 class="post-title">From Hobbies to Globetrotting Adventures</h2>
+                <p class="post-excerpt">With the hustle and bustle of daily life, hobbies serve as a cherished respite—a means to unwind, delve into new interests, and acquir...</p>
+                <button class="read-more-btn" data-blog-id="blog4">Read More</button>
+            </div>
+
+            <div id="b5" class="post-card">
+                <h2 class="post-title">Navigating the Ethics of Artificial Intelligence</h2>
+                <p class="post-excerpt">Artificial intelligence (AI) is undergoing a seismic transformation across industries, spanning healthcare, finance, education, and transportation. Howe...</p>
+                <button class="read-more-btn" data-blog-id="blog5">Read More</button>
+            </div>
+
+            <div id="b6" class="post-card">
+                <h2 class="post-title">Unlocking the Power of Sleep Hygiene</h2>
+                <p class="post-excerpt">Sleep hygiene—a term that encapsulates a set of practices and habits—is the guardian of profound transformation in your life. These pra...</p>
+                <button class="read-more-btn" data-blog-id="blog6">Read More</button>
+            </div>
+
+            <div id="b7" class="post-card">
+                <h2 class="post-title">Unveiling Adventure: Top 10 Off-the-Beaten-Path Destinations for Brave Explorers</h2>
+                <p class="post-excerpt">For those intrepid souls who yearn to venture beyond the well-trodden tourist trails, the world harbors a treasure trove of hi...</p>
+                <button class="read-more-btn" data-blog-id="blog7">Read More</button>
+            </div>
+
+            <div id="b8" class="post-card">
+                <h2 class="post-title">Guardians of Your Digital Fortress</h2>
+                <p class="post-excerpt">In an era dominated by technology and the internet, safeguarding your personal and sensitive information online has assumed paramount signific...</p>
+                <button class="read-more-btn" data-blog-id="blog8">Read More</button>
+            </div>
+
+            <div id="b9" class="post-card">
+                <h2 class="post-title">Exercise for Mental Health: The Why and How</h2>
+                <p class="post-excerpt">In the intricate tapestry of our well-being, mental health forms a pivotal thread, and ex...</p>
+                <button class="read-more-btn" data-blog-id="blog9">Read More</button>
+            </div>
+
+            <div id="b10" class="post-card">
+                <h2 class="post-title">Capturing Wanderlust: The World's Most Instagrammable Destinations</h2>
+                <p class="post-excerpt">With the rise of Instagram, travel enthusiasts have found a captivating platform...</p>
+                <button class="read-more-btn" data-blog-id="blog10">Read More</button>
+            </div>
+            
+
+
+
+
+
+
+          
+
+
+        </div>
+
+        
+        
+        <%- include("./partials/footer.ejs") %>
